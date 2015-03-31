@@ -1,7 +1,10 @@
-USE the codeup_test_db;
+USE codeup_test_db;
+-- similar to a reset, removes old data preparing table for fresh start
+TRUNCATE TABLE albums;
 
-INSERT INTO albums (id, artist, name, release_d, sales_in_millions, genre)
-VALUES ('Michael Jackson'     , 'Thriller'                                , '1982', 'Pop, rock, R&B',                  '42.4'),
+INSERT INTO albums (artist, name, release_d, genre, sales_in_millions)
+VALUES 
+('Michael Jackson'     , 'Thriller'                                , '1982', 'Pop, rock, R&B',                  '42.4'),
 ('Pink Floyd'          , 'The Dark Side of the Moon'               , '1973', 'Progressive Rock',                '22.7'),
 ('Whitney Houston'     , 'The Bodyguard'                           , '1992', 'Soundtrack/R&B, soul, pop',       '27.4'),
 ('Meat Loaf'           , 'Bat Out of Hell'                         , '1977', 'Hard rock, progressive rock',     '20.6'),
