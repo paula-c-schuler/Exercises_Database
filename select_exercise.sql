@@ -1,6 +1,6 @@
-USE codeup_test_db;
+--  EXERCISE 8.4.2 COMPLETE USING SELECT AND WHERE --- 
 
--- SELECT "I am fine" AS "INFO";
+USE codeup_test_db;
 
 -- Name of all albums by Pink Floyd
 SELECT name 
@@ -29,9 +29,9 @@ FROM albums
 WHERE sales_in_millions > 20;
 
 -- All the albums in the rock genre. Is this all the rock albums in the table
-SELECT name
+SELECT NAME
 FROM albums
-WHERE genre = '%rock%';
+WHERE 'rock' LIKE concat('%', 'rock', '%');
  
 
 
