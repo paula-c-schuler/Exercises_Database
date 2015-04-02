@@ -1,4 +1,7 @@
+-- EXERCISE 8.4.4  COMPLETE  DELETE AND TRUNCATE 
+
 USE codeup_test_db;
+
 -- similar to a reset, removes old data preparing table for fresh start
 TRUNCATE TABLE albums;
 
